@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" type="image/png" href="calculator.png" />
+  <link rel="stylesheet" href="binary_calculator.css">
+  <title>Binary Calculator</title>
+</head>
+<body>
+  <div class="container">
+    <div class="calculator">
+      <input id="binary_input" placeholder="Enter binary number">
+      <br>
+      <button class="btn" onclick="pressBinary('0')">0</button>
+      <button class="btn" onclick="pressBinary('1')">1</button>
+      <button class="btn" onclick="pressOperator('*')">x</button>
+      <button class="btn" onclick="pressOperator('/')">÷</button>
+      <button class="btn" onclick="pressOperator('+')">+</button>
+      <button class="btn" onclick="pressOperator('-')">-</button>
+      <br>
+      <button class="btnEqual" onclick="equalBinary()">=</button>
+      <button class="btn" onclick="clearInput()">C</button>
+    </div>
+    <div class="result">
+      <input id="decimal_output" placeholder="Result" disabled>
+    </div>
+  </div>
+  <script src="binary_calculator.js"></script>
+</body>
+</html>
